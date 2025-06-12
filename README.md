@@ -1,4 +1,4 @@
-# 🧑‍🍳 AIChef
+# 🧑‍🍳 Chef Padre
 AIChef is a smart recipe generator built with React.js, powered by Gemini AI, and styled using Tailwind CSS. Simply enter the ingredients you have, and AIChef will whip up a delicious recipe using AI-generated suggestions. The app also supports rich markdown rendering to beautifully display the AI's output.
 
 ## 🚀 Features
