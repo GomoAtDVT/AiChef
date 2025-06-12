@@ -2,8 +2,8 @@
 AIChef is a smart recipe generator built with React.js, powered by Gemini AI, and styled using Tailwind CSS. Simply enter the ingredients you have, and AIChef will whip up a delicious recipe using AI-generated suggestions. The app also supports rich markdown rendering to beautifully display the AI's output.
 
 ## 🚀 Features
-🧠 AI-Powered Recipes: Uses Gemini AI to generate creative and contextual recipes based on user-provided ingredients.
-📝 Markdown Rendering: Displays AI responses with proper formatting using markdown rendering packages.
+- 🧠 AI-Powered Recipes: Uses Gemini AI to generate creative and contextual recipes based on user-provided ingredients.
+- 📝 Markdown Rendering: Displays AI responses with proper formatting using markdown rendering packages.
 - 🎨 Tailwind CSS Styling: Clean, responsive, and modern UI built with Tailwind.
 -⚡ Fast & Interactive: Built with React for a smooth and dynamic user experience.
 
