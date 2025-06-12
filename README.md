@@ -49,8 +49,8 @@ aichef/
 ```
 
 
-###🤝 Contributing
+### 🤝 Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
-###📄 License
+### 📄 License
 MIT License © 2025 Gomolemo Motlhamme
