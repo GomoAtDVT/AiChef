@@ -15,6 +15,7 @@ AIChef is a smart recipe generator built with React.js, powered by Gemini AI, an
 - AI Integration: Gemini AI API
 - Markdown Rendering: (e.g., react-markdown, remark-gfm, etc.)
 
+![Screenshot (11)](https://github.com/user-attachments/assets/81e91dca-b8d1-4402-bcff-e2b947c3382b)
 
 
 
