@@ -4,8 +4,8 @@ function Header() {
 
     return (
         <>
-            <header className="flex p-7 gap-3 items-center justify-center text-black text-2xl font-bold bg-white shadow-md rounded-lg">
-                <p>Chef Padre</p>
+            <header className="flex  gap-3 items-center justify-center text-black text-2xl font-bold bg-white shadow-md rounded-lg">
+                <img className="h-30" src="./Chef_padre_creation.png" alt="" /><p className="font-light italic">Prepared with love and care</p>
             </header>
         </>
     )

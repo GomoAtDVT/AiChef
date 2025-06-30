@@ -5,11 +5,13 @@ import { getRecipeFromMistral } from "../services/ai"
 function Main() {
   const [ingredients, setIngredients] = React.useState([]);
   const [recipe, setRecipe] = React.useState("");
-
+  const [loading, setLoading] = React.useState();
+  
   async function handleRecipe() {
-    
+    setLoading(true);
     const response = await getRecipeFromMistral(ingredients);
     setRecipe(response);
+    setLoading(false);
   }
   
 
@@ -25,20 +27,20 @@ function Main() {
   
   return (
     <>
-      <main className="flex  ">
-        <section className="flex flex-col items-start p-15 ">
+      <main className="flex lg:flex-row sm:flex-col lg:justify-between  bg-gray-800 min-h-screen ">
+        <section className="flex flex-col lg:items-start sm:items-center lg:w-full lg:h-150 md:w-full sm:w-full lg:mx-5 sm:mx-5 md:mx-0 sm:mt-5 lg:p-10  bg-gray-600 rounded-lg shadow-md">
           <form
-          className="flex  gap-3 pb-10  items-center   "
+          className="flex lg:p-0 md:p-10 gap-3 "
           action={handleEvent}
         >
           <input
-            className="p-2 border-1 rounded"
+            className="p-2 rounded shadow-md bg-gray-500"
             placeholder="e.g avocado"
             type="text"
             aria-label="Add ingredient"
             name="ingredient"
           />
-          <button className="p-2 border-1 bg-black text-white rounded  " >
+          <button className="p-2 cursor-pointer bg-black text-white rounded  shadow-md" >
             + Add Ingredient
           </button>
         </form>
@@ -53,7 +55,12 @@ function Main() {
         </section>
         
           <section>
-        {recipe ? <AiRecipe recipe={recipe}/> : null}
+            {
+
+        recipe ? <AiRecipe loading={loading} setLoading={setLoading} recipe={recipe}/>
+        : <AiRecipe loading={loading} setLoading={setLoading} recipe={recipe} />
+        
+        }
         </section>
       </main>
     </>
